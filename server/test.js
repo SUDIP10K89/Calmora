@@ -1,8 +1,8 @@
-const { GoogleGenerativeAI } = require("@google/generative-ai");
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 
 const main = async () => {
-const genAI = new GoogleGenerativeAI("AIzaSyAMX9ddgvDVMc8pyogB6W-ItDEtL0ovNDs");
+const genAI = new GoogleGenerativeAI("AIzaSyAKE1coDSooLqj799HWabxV4HM89tu77mc");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const prompt = "What is the meaning of life?";
