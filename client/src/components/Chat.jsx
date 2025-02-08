@@ -25,7 +25,7 @@ const Chat = () => {
         setIsLoading(true);
 
         try {
-            const response = await axios.post("http://localhost:3000/chat", { 
+            const response = await axios.post("https://calmora-isd4.onrender.com/chat", { 
                 message: input 
             });
             setMessages([...newMessages, { 
