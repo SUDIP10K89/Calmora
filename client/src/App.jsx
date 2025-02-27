@@ -1,11 +1,19 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Chat from './components/Chat'
+import LoginScreen from './components/Login'
+import RegisterScreen from './components/Register'
+import NotFound from './components/NotFound';
 
 const App = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-800">
-      <Chat />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/" element={<LoginScreen />} />
+        <Route path="/register" element={<RegisterScreen />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   )
 }
 
