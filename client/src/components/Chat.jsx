@@ -69,7 +69,7 @@ const Chat = () => {
                         </div>
                         <div>
                             <h2 className={`text-xl font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                                MindfulChat
+                                Calmora
                             </h2>
                             <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                                 Your caring companion, here to listen
