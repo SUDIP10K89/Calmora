@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import admin from './firebaseConfig.js';
 
 dotenv.config();
 
@@ -18,17 +17,6 @@ app.get('/', (req, res) => {
     res.send('Chatbot is running');
 });
 
-app.post("/auth/google", async (req, res) => {
-    try {
-        const {token} = req.body;
-        const decodedToken = await admin.auth().verifyIdToken(token);
-        const {uid,email,name,picture} = decodedToken;
-        res.json({uid,email,name,picture});
-    } catch (error) {
-        res.status(401).json({error:error.message});
-    }
-}
-);
 
 app.post('/chat', async (req, res) => {
     try {
