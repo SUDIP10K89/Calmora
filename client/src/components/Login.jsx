@@ -54,7 +54,7 @@ const LoginScreen = () => {
           <h1 className={`text-2xl font-semibold mb-1 ${
             isDark ? 'text-white' : 'text-gray-900'
           }`}>
-            Welcome to MindfulChat
+            Welcome to Calmora
           </h1>
           <p className={`text-sm text-center ${
             isDark ? 'text-gray-400' : 'text-gray-600'
