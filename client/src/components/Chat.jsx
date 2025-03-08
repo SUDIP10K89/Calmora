@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios"; // Import axios for API calls
-import { Send, Loader2, Sun, Moon, Heart, MessageCircle } from "lucide-react";
+import { Send, Loader2, Sun, Moon, Heart} from "lucide-react";
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
