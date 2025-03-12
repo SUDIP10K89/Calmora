@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBY9wFxpFpnRMyUGGsIMO7YblhaVRcZnZc",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "calmoraai.firebaseapp.com",
     projectId: "calmoraai",
     storageBucket: "calmoraai.firebasestorage.app",

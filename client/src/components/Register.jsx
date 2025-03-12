@@ -30,7 +30,7 @@ const RegisterScreen = () => {
     setIsLoading(true);
     setError("");
     
-    // Simulate API call
+   // Create user with email and password
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       console.log('User created:', userCredential.user);
