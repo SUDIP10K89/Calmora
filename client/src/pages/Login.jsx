@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Heart, Eye, EyeOff, Mail, Lock } from "lucide-react";
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth, googleProvider, signInWithPopup } from "./firebase";
+import { auth, googleProvider, signInWithPopup } from "../components/firebase";
 import {useNavigate} from 'react-router-dom';
 
 const LoginScreen = () => {

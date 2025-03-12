@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Heart, Eye, EyeOff, Mail, Lock, User } from "lucide-react";
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebase';
+import { auth } from '../components/firebase';
 
 const RegisterScreen = () => {
   const [isDark, setIsDark] = useState(true);

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Chat from './components/Chat'
-import LoginScreen from './components/Login'
-import RegisterScreen from './components/Register'
 import NotFound from './components/NotFound';
+import Chat from "./pages/Chat";
+import LoginScreen from "./pages/Login";
+import RegisterScreen from "./pages/Register";
 
 const App = () => {
   return (
