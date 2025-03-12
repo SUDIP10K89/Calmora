@@ -235,6 +235,16 @@ const RegisterScreen = () => {
               </button>
             </div>
           </div>
+
+          {/* Sign In Link */}
+          <div className={`text-sm text-center mt-6 ${
+            isDark ? 'text-gray-400' : 'text-gray-600'
+          }`}>
+            Already have an account?{" "}
+            <a href="/" className="font-medium text-purple-500 hover:text-purple-400">
+              Sign in
+            </a>
+          </div>
           
           {/* Register Button */}
           <button
@@ -259,15 +269,7 @@ const RegisterScreen = () => {
             )}
           </button>
           
-          {/* Sign In Link */}
-          <div className={`text-sm text-center mt-6 ${
-            isDark ? 'text-gray-400' : 'text-gray-600'
-          }`}>
-            Already have an account?{" "}
-            <a href="/" className="font-medium text-purple-500 hover:text-purple-400">
-              Sign in
-            </a>
-          </div>
+          
         </form>
       </div>
       
