@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Heart, Eye, EyeOff, Mail, Lock, User } from "lucide-react";
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from './firebase';
 
 const RegisterScreen = () => {
   const [isDark, setIsDark] = useState(true);
@@ -30,10 +32,8 @@ const RegisterScreen = () => {
     
     // Simulate API call
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      // For demo purposes, we're just simulating successful registration
-      console.log("Registration successful");
-      // Redirect would happen here in a real app
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      console.log('User created:', userCredential.user);
     } catch (err) {
       setError("Registration failed. Please try again.");
       console.error(err);
